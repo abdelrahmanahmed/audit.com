@@ -26,6 +26,14 @@ const Index = () => {
           </div>
         </div>
         
+        {/* Website Name */}
+        <p 
+          className="mb-4 animate-fade-in text-2xl font-semibold text-primary sm:text-3xl md:text-4xl"
+          style={{ animationDelay: "0.05s", animationFillMode: "both" }}
+        >
+          audit.com.eg
+        </p>
+        
         {/* Heading */}
         <h1 
           className="mb-6 animate-fade-in text-5xl font-extrabold tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl"
