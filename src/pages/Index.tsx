@@ -67,7 +67,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="absolute bottom-8 left-0 right-0 z-10">
         <p className="text-center text-sm text-muted-foreground">
-          © 2025 All Rights Reserved
+          © 2025 audit.com.eg - All Rights Reserved
         </p>
       </footer>
     </div>
