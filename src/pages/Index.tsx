@@ -60,7 +60,7 @@ const Index = () => {
           className="animate-fade-in text-sm font-medium text-primary"
           style={{ animationDelay: "0.4s", animationFillMode: "both" }}
         >
-          Expected Launch: Coming Soon
+          Coming Soon
         </p>
       </main>
       
