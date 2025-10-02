@@ -1,15 +1,20 @@
 import { Wrench } from "lucide-react";
+
 const Index = () => {
-  return <div className="relative min-h-screen w-full overflow-hidden bg-background">
+  return (
+    <div className="relative min-h-screen w-full overflow-hidden bg-background">
       {/* Gradient Glow Background */}
       <div className="absolute inset-0 bg-gradient-glow opacity-50" />
       
       {/* Grid Pattern Overlay */}
-      <div className="absolute inset-0 opacity-10" style={{
-      backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px),
+      <div 
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px),
                            linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
-      backgroundSize: '50px 50px'
-    }} />
+          backgroundSize: '50px 50px'
+        }}
+      />
       
       {/* Main Content */}
       <main className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center">
@@ -22,45 +27,47 @@ const Index = () => {
         </div>
         
         {/* Website Name */}
-        <p className="mb-4 animate-fade-in text-2xl font-semibold text-primary sm:text-3xl md:text-4xl" style={{
-        animationDelay: "0.05s",
-        animationFillMode: "both"
-      }}>
+        <p 
+          className="mb-4 animate-fade-in text-2xl font-semibold text-primary sm:text-3xl md:text-4xl"
+          style={{ animationDelay: "0.05s", animationFillMode: "both" }}
+        >
           audit.com.eg
         </p>
         
         {/* Heading */}
-        <h1 className="mb-6 animate-fade-in text-5xl font-extrabold tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl" style={{
-        animationDelay: "0.1s",
-        animationFillMode: "both"
-      }}>
+        <h1 
+          className="mb-6 animate-fade-in text-5xl font-extrabold tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl"
+          style={{ animationDelay: "0.1s", animationFillMode: "both" }}
+        >
           Under Construction
         </h1>
         
         {/* Subheading */}
-        <p className="mb-12 max-w-2xl animate-fade-in text-lg text-muted-foreground sm:text-xl md:text-2xl" style={{
-        animationDelay: "0.2s",
-        animationFillMode: "both"
-      }}>We're crafting something extraordinary.
-Our website is currently under development, with careful attention given to every detail.</p>
+        <p 
+          className="mb-12 max-w-2xl animate-fade-in text-lg text-muted-foreground sm:text-xl md:text-2xl"
+          style={{ animationDelay: "0.2s", animationFillMode: "both" }}
+        >
+          We're crafting something extraordinary. Our website is currently being built with care and attention to detail.
+        </p>
         
         {/* Progress Bar */}
-        <div className="mb-8 w-full max-w-md animate-fade-in" style={{
-        animationDelay: "0.3s",
-        animationFillMode: "both"
-      }}>
+        <div 
+          className="mb-8 w-full max-w-md animate-fade-in"
+          style={{ animationDelay: "0.3s", animationFillMode: "both" }}
+        >
           <div className="h-2 overflow-hidden rounded-full bg-muted">
-            <div className="h-full animate-progress rounded-full bg-gradient-primary" style={{
-            animationDuration: "3s"
-          }} />
+            <div 
+              className="h-full animate-progress rounded-full bg-gradient-primary"
+              style={{ animationDuration: "3s" }}
+            />
           </div>
         </div>
         
         {/* Status Text */}
-        <p className="animate-fade-in text-sm font-medium text-primary" style={{
-        animationDelay: "0.4s",
-        animationFillMode: "both"
-      }}>
+        <p 
+          className="animate-fade-in text-sm font-medium text-primary"
+          style={{ animationDelay: "0.4s", animationFillMode: "both" }}
+        >
           Coming Soon
         </p>
       </main>
@@ -71,6 +78,8 @@ Our website is currently under development, with careful attention given to ever
           © 2025 audit.com.eg - All Rights Reserved
         </p>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
